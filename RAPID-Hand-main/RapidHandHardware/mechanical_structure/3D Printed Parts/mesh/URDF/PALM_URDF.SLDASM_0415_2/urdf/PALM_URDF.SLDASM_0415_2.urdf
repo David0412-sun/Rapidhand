@@ -1,0 +1,2267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="PALM_URDF.SLDASM_0415_2">
+  <link
+    name="BASE">
+    <inertial>
+      <origin
+        xyz="0.00096535157636457 0.00188350285132327 0.0592475503813128"
+        rpy="0 0 0" />
+      <mass
+        value="0.3661552578116" />
+      <inertia
+        ixx="0.000260139647086525"
+        ixy="-2.844510284597E-06"
+        ixz="-3.95149321502308E-05"
+        iyy="0.000497625273932272"
+        iyz="-1.38778973935459E-06"
+        izz="0.000339281330458025" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/BASE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/BASE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="TMCPF">
+    <inertial>
+      <origin
+        xyz="-8.94485140210538E-08 -0.00651772632754086 0.00979641891039229"
+        rpy="0 0 0" />
+      <mass
+        value="0.00403111186793774" />
+      <inertia
+        ixx="3.51226821493148E-07"
+        ixy="5.13601613292409E-13"
+        ixz="-3.55839429696958E-12"
+        iyy="5.76592866072564E-07"
+        iyz="-3.46269775245642E-08"
+        izz="3.57954487924098E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TF"
+    type="revolute">
+    <origin
+      xyz="0.0440000057220452 -0.00750000143051144 0.0429999918937673"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="TMCPF" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="TMCPS">
+    <inertial>
+      <origin
+        xyz="0.00103849116596672 -1.64329802196383E-07 -0.00331551855469381"
+        rpy="0 0 0" />
+      <mass
+        value="0.0106268686560954" />
+      <inertia
+        ixx="7.55169051256462E-07"
+        ixy="6.05082919323149E-13"
+        ixz="-2.40107133877211E-08"
+        iyy="5.98746618835006E-07"
+        iyz="6.62863494730721E-12"
+        izz="6.08350308334754E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TS"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0308500019449836"
+      rpy="0 0 0" />
+    <parent
+      link="TMCPF" />
+    <child
+      link="TMCPS" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="TPIP">
+    <inertial>
+      <origin
+        xyz="0.00086418171621345 0.000343885439703845 0.014124601009625"
+        rpy="0 0 0" />
+      <mass
+        value="0.0273995580848551" />
+      <inertia
+        ixx="5.51734130747596E-06"
+        ixy="6.92817305609032E-09"
+        ixz="-1.54059086928061E-07"
+        iyy="4.42571415651143E-06"
+        iyz="1.25541649165616E-07"
+        izz="1.96525275887111E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0185"
+      rpy="0 0 0" />
+    <parent
+      link="TMCPS" />
+    <child
+      link="TPIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="TDIP">
+    <inertial>
+      <origin
+        xyz="0.000545562549315232 -0.00117805590778446 0.0178954646012128"
+        rpy="0 0 0" />
+      <mass
+        value="0.0478299647231212" />
+      <inertia
+        ixx="7.0456175327454E-06"
+        ixy="3.17168411405183E-09"
+        ixz="6.30981997121996E-09"
+        iyy="6.19332040331526E-06"
+        iyz="-2.60452929393571E-07"
+        izz="2.18835005443905E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465"
+      rpy="0.0091796 0 0" />
+    <parent
+      link="TPIP" />
+    <child
+      link="TDIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="TDIP_TACTILE_DOWN">
+    <inertial>
+      <origin
+        xyz="1.30104260698261E-16 0 -0.00249999999999997"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333334E-08"
+        ixy="2.92378642456963E-23"
+        ixz="5.55715796254778E-24"
+        iyy="2.929E-08"
+        iyz="-3.69344866215767E-24"
+        izz="7.27550000000001E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP_TACTILE_DOWN.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP_TACTILE_DOWN.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TD_TD"
+    type="fixed">
+    <origin
+      xyz="0.0001 -0.015137 0.0076551"
+      rpy="1.5616 0 0" />
+    <parent
+      link="TDIP" />
+    <child
+      link="TDIP_TACTILE_DOWN" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="TDIP_TACTILE_UP">
+    <inertial>
+      <origin
+        xyz="1.47451495458029E-16 0 -0.00249999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333336E-08"
+        ixy="3.84514224378E-23"
+        ixz="9.88393007284593E-25"
+        iyy="2.92900000000001E-08"
+        iyz="3.69629091429135E-25"
+        izz="7.27550000000003E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP_TACTILE_UP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP_TACTILE_UP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TD_UP"
+    type="fixed">
+    <origin
+      xyz="9.999999999976E-05 -0.0149229610290948 0.0309977696481492"
+      rpy="1.56161675868976 0 0" />
+    <parent
+      link="TDIP" />
+    <child
+      link="TDIP_TACTILE_UP" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="TDIP_CAMERA">
+    <inertial>
+      <origin
+        xyz="2.67746700503384E-05 0.00308600031104966 -0.0151496387593847"
+        rpy="0 0 0" />
+      <mass
+        value="0.000865724954084934" />
+      <inertia
+        ixx="1.2382360219818E-08"
+        ixy="-9.35231094103681E-23"
+        ixz="6.5183162127621E-23"
+        iyy="4.23357916729273E-08"
+        iyz="4.32469630376937E-09"
+        izz="4.62079016284062E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP_CAMERA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TDIP_CAMERA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TD_C"
+    type="fixed">
+    <origin
+      xyz="9.99999999999786E-05 -0.00924715447690669 0.0536817472701889"
+      rpy="-1.03801798309146 0 3.14159265358979" />
+    <parent
+      link="TDIP" />
+    <child
+      link="TDIP_CAMERA" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="TPIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="-1.06858966120171E-15 0 -0.00249999999999984"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333334E-08"
+        ixy="-1.76045252088242E-23"
+        ixz="1.2376925121472E-24"
+        iyy="2.92900000000001E-08"
+        iyz="1.9575347483553E-24"
+        izz="7.27550000000001E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TPIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/TPIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TP_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.015 0.00744999999999996"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="TPIP" />
+    <child
+      link="TPIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IMCPF">
+    <inertial>
+      <origin
+        xyz="-0.0410620793421466 0.00397819824992791 -0.017987912201668"
+        rpy="0 0 0" />
+      <mass
+        value="0.787468038824645" />
+      <inertia
+        ixx="0.0050565672322284"
+        ixy="8.21971233068345E-05"
+        ixz="0.000588066345918651"
+        iyy="0.00752978496763673"
+        iyz="0.000185293339212745"
+        izz="0.002773268562216" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IF"
+    type="revolute">
+    <origin
+      xyz="0.062 -0.0075 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="IMCPF" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="IMCPS">
+    <inertial>
+      <origin
+        xyz="0.000366352894817012 0.00136079106892852 0.0363070006443151"
+        rpy="0 0 0" />
+      <mass
+        value="0.0299795617629257" />
+      <inertia
+        ixx="4.61407270089445E-06"
+        ixy="-8.9935797966908E-11"
+        ixz="-2.65128538904175E-09"
+        iyy="4.96910634776405E-06"
+        iyz="-1.08820321097629E-08"
+        izz="1.68786894408092E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="IMCPF" />
+    <child
+      link="IMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="IPIP">
+    <inertial>
+      <origin
+        xyz="0.000883607943124698 0.000518551489527355 0.0315502125402504"
+        rpy="0 0 0" />
+      <mass
+        value="0.027206442467989" />
+      <inertia
+        ixx="4.85051610724986E-06"
+        ixy="1.06519728675525E-08"
+        ixz="1.36331026032813E-07"
+        iyy="3.78353465508138E-06"
+        iyz="-5.44400980604431E-08"
+        izz="1.94188295958329E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.052"
+      rpy="0 0 0" />
+    <parent
+      link="IMCPS" />
+    <child
+      link="IPIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="IDIP">
+    <inertial>
+      <origin
+        xyz="0.000755618362616284 -0.0028569002986303 0.0251719278979156"
+        rpy="0 0 0" />
+      <mass
+        value="0.0152963409977157" />
+      <inertia
+        ixx="2.60252180819878E-06"
+        ixy="-6.11796223608746E-09"
+        ixz="1.3786754678515E-07"
+        iyy="2.43805284577734E-06"
+        iyz="1.22062110226717E-07"
+        izz="7.35865815495018E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ID"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465000000000003"
+      rpy="0 0 0" />
+    <parent
+      link="IPIP" />
+    <child
+      link="IDIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="IDIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00145999999999999" />
+      <inertia
+        ixx="4.9548333333333E-08"
+        ixy="1.0352859666611E-23"
+        ixz="-1.3808909495774E-24"
+        iyy="2.92899999999995E-08"
+        iyz="8.6757470060244E-26"
+        izz="7.27549999999992E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IDIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IDIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ID_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.0149254046082226 0.0240957914612014"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="IDIP" />
+    <child
+      link="IDIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IDIP_CAMERA">
+    <inertial>
+      <origin
+        xyz="2.67746700504112E-05 0.00407450190545353 -0.015109791760626"
+        rpy="0 0 0" />
+      <mass
+        value="0.00086572495408493" />
+      <inertia
+        ixx="1.23823602198178E-08"
+        ixy="3.60503654350637E-24"
+        ixz="7.07187862733538E-24"
+        iyy="4.23218910238283E-08"
+        iyz="4.32064612591672E-09"
+        izz="4.62218022775047E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IDIP_CAMERA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IDIP_CAMERA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ID_C"
+    type="fixed">
+    <origin
+      xyz="0 -0.00945806338187481 0.0430527620973654"
+      rpy="-1.0471975511966 0 -3.14159265358979" />
+    <parent
+      link="IDIP" />
+    <child
+      link="IDIP_CAMERA" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IPIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 2.77555756156289E-17 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00145999999999999" />
+      <inertia
+        ixx="4.9548333333333E-08"
+        ixy="-1.95612994968324E-23"
+        ixz="2.72321374069737E-25"
+        iyy="2.92899999999995E-08"
+        iyz="-4.22197064611139E-24"
+        izz="7.27549999999991E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IPIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IPIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IP_T"
+    type="fixed">
+    <origin
+      xyz="5.00000000001055E-05 -0.0149999999999999 0.0390999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="IPIP" />
+    <child
+      link="IPIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IMCPS_TACTILE">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 1.38777878078145E-17 -0.00249999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.00145999999999999" />
+      <inertia
+        ixx="4.95483333333333E-08"
+        ixy="-2.60053548223711E-23"
+        ixz="-3.77338073205544E-24"
+        iyy="2.92899999999995E-08"
+        iyz="1.9160813811325E-24"
+        izz="7.27549999999994E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IMCPS_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/IMCPS_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IS_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.015 0.0445"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="IMCPS" />
+    <child
+      link="IMCPS_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="MMCPF">
+    <inertial>
+      <origin
+        xyz="-0.00506207934214653 0.00397819824992804 -0.017987912201668"
+        rpy="0 0 0" />
+      <mass
+        value="0.787468038824646" />
+      <inertia
+        ixx="0.0050565672322284"
+        ixy="8.21971233068328E-05"
+        ixz="0.000588066345918664"
+        iyy="0.00752978496763674"
+        iyz="0.000185293339212745"
+        izz="0.00277326856221601" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MF"
+    type="revolute">
+    <origin
+      xyz="0.026 -0.0075 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="MMCPF" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="MMCPS">
+    <inertial>
+      <origin
+        xyz="0.000366352894816568 0.0013607910689285 0.036307000644315"
+        rpy="0 0 0" />
+      <mass
+        value="0.0299795617629258" />
+      <inertia
+        ixx="4.61407270089446E-06"
+        ixy="-8.99357979659234E-11"
+        ixz="-2.65128538904686E-09"
+        iyy="4.96910634776407E-06"
+        iyz="-1.08820321097613E-08"
+        izz="1.68786894408093E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="MMCPF" />
+    <child
+      link="MMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="MPIP">
+    <inertial>
+      <origin
+        xyz="0.00088360794312492 0.000518551489527411 0.0315502125402505"
+        rpy="0 0 0" />
+      <mass
+        value="0.0272064424679892" />
+      <inertia
+        ixx="4.85051610725001E-06"
+        ixy="1.06519728675506E-08"
+        ixz="1.36331026032793E-07"
+        iyy="3.78353465508154E-06"
+        iyz="-5.44400980604316E-08"
+        izz="1.94188295958329E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0519999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="MMCPS" />
+    <child
+      link="MPIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="MDIP">
+    <inertial>
+      <origin
+        xyz="0.000755618362616284 -0.00285690029863034 0.0251719278979156"
+        rpy="0 0 0" />
+      <mass
+        value="0.0152963409977157" />
+      <inertia
+        ixx="2.6025218081988E-06"
+        ixy="-6.11796223608874E-09"
+        ixz="1.37867546785198E-07"
+        iyy="2.43805284577736E-06"
+        iyz="1.22062110226714E-07"
+        izz="7.35865815495016E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465000000000001"
+      rpy="0 0 0" />
+    <parent
+      link="MPIP" />
+    <child
+      link="MDIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="MDIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 -2.77555756156289E-17 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00145999999999999" />
+      <inertia
+        ixx="4.95483333333329E-08"
+        ixy="-6.02909085365976E-26"
+        ixz="-4.5416300957282E-24"
+        iyy="2.92899999999995E-08"
+        iyz="-5.3677819714707E-24"
+        izz="7.27549999999991E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MDIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MDIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MD_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.0149254046082226 0.0240957914612014"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="MDIP" />
+    <child
+      link="MDIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="MDIP_CAMERA">
+    <inertial>
+      <origin
+        xyz="2.67746700501892E-05 0.00407450190545353 -0.015109791760626"
+        rpy="0 0 0" />
+      <mass
+        value="0.000865724954084932" />
+      <inertia
+        ixx="1.2382360219818E-08"
+        ixy="3.01809769989765E-25"
+        ixz="-1.91178019724602E-24"
+        iyy="4.23218910238286E-08"
+        iyz="4.32064612591669E-09"
+        izz="4.62218022775049E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MDIP_CAMERA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MDIP_CAMERA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MD_C"
+    type="fixed">
+    <origin
+      xyz="0 -0.00945806338187481 0.0430527620973654"
+      rpy="-1.0471975511966 0 -3.14159265358979" />
+    <parent
+      link="MDIP" />
+    <child
+      link="MDIP_CAMERA" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="MPIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00145999999999999" />
+      <inertia
+        ixx="4.95483333333332E-08"
+        ixy="-5.20577693069713E-24"
+        ixz="-1.41268932206765E-25"
+        iyy="2.92899999999995E-08"
+        iyz="-4.52736710151494E-24"
+        izz="7.27549999999994E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MPIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MPIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MP_T"
+    type="fixed">
+    <origin
+      xyz="5.00000000001055E-05 -0.015 0.0390999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="MPIP" />
+    <child
+      link="MPIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="MMCPS_TACTILE">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 2.77555756156289E-17 -0.00249999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.00145999999999999" />
+      <inertia
+        ixx="4.9548333333333E-08"
+        ixy="-9.66913771948077E-24"
+        ixz="2.95914222032437E-25"
+        iyy="2.92899999999995E-08"
+        iyz="-4.72572091989409E-24"
+        izz="7.27549999999992E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MMCPS_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/MMCPS_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MS_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.015 0.0445"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="MMCPS" />
+    <child
+      link="MMCPS_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RMCPF">
+    <inertial>
+      <origin
+        xyz="0.0309379206578559 0.00397819824992797 -0.0179879122016679"
+        rpy="0 0 0" />
+      <mass
+        value="0.787468038824645" />
+      <inertia
+        ixx="0.0050565672322284"
+        ixy="8.21971233068352E-05"
+        ixz="0.000588066345918651"
+        iyy="0.00752978496763673"
+        iyz="0.000185293339212745"
+        izz="0.002773268562216" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF"
+    type="revolute">
+    <origin
+      xyz="-0.01 -0.0075 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="RMCPF" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RMCPS">
+    <inertial>
+      <origin
+        xyz="0.00036635289481679 0.00136079106892849 0.036307000644315"
+        rpy="0 0 0" />
+      <mass
+        value="0.0299795617629258" />
+      <inertia
+        ixx="4.61407270089445E-06"
+        ixy="-8.99357979702081E-11"
+        ixz="-2.65128538904501E-09"
+        iyy="4.96910634776407E-06"
+        iyz="-1.08820321097617E-08"
+        izz="1.68786894408093E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RMCPF" />
+    <child
+      link="RMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RPIP">
+    <inertial>
+      <origin
+        xyz="0.000883607942915421 0.000518551489729971 0.0315502125402219"
+        rpy="0 0 0" />
+      <mass
+        value="0.0272064424685651" />
+      <inertia
+        ixx="4.85051610732065E-06"
+        ixy="1.06519728750291E-08"
+        ixz="1.36331026037561E-07"
+        iyy="3.78353465510333E-06"
+        iyz="-5.44400980930827E-08"
+        izz="1.94188295962763E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0520000000000002"
+      rpy="0 0 0" />
+    <parent
+      link="RMCPS" />
+    <child
+      link="RPIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RDIP">
+    <inertial>
+      <origin
+        xyz="0.00075561836261584 -0.00285690029863032 0.0251719278979157"
+        rpy="0 0 0" />
+      <mass
+        value="0.0152963409977157" />
+      <inertia
+        ixx="2.60252180819879E-06"
+        ixy="-6.11796223608595E-09"
+        ixz="1.37867546785174E-07"
+        iyy="2.43805284577734E-06"
+        iyz="1.22062110226726E-07"
+        izz="7.35865815495007E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0464999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="RPIP" />
+    <child
+      link="RDIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RDIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="-5.00000000002165E-05 0.0314957914612014 -0.00257459539177739"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333335E-08"
+        ixy="4.54660826423479E-23"
+        ixz="-1.61774727528033E-23"
+        iyy="2.92900000000001E-08"
+        iyz="-4.12403362478913E-24"
+        izz="7.27550000000003E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RDIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RDIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RD_T"
+    type="fixed">
+    <origin
+      xyz="5.00000000001055E-05 -0.015 -0.00739999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="RDIP" />
+    <child
+      link="RDIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RDIP_CAMERA">
+    <inertial>
+      <origin
+        xyz="2.67746700504112E-05 0.00407450190545353 -0.015109791760626"
+        rpy="0 0 0" />
+      <mass
+        value="0.000865724954084925" />
+      <inertia
+        ixx="1.23823602198179E-08"
+        ixy="1.60096060721953E-24"
+        ixz="1.61238207148645E-24"
+        iyy="4.23218910238279E-08"
+        iyz="4.32064612591663E-09"
+        izz="4.62218022775043E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RDIP_CAMERA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RDIP_CAMERA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RD_C"
+    type="fixed">
+    <origin
+      xyz="0 -0.0094580633818748 0.0430527620973653"
+      rpy="-1.0471975511966 0 -3.14159265358979" />
+    <parent
+      link="RDIP" />
+    <child
+      link="RDIP_CAMERA" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RPIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333332E-08"
+        ixy="-1.42537950031485E-22"
+        ixz="-2.06737579452231E-25"
+        iyy="2.92899999999999E-08"
+        iyz="-4.76711350057175E-24"
+        izz="7.27549999999998E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RPIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RPIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RP_T"
+    type="fixed">
+    <origin
+      xyz="5.00000000001055E-05 -0.0149999999999999 0.0390999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="RPIP" />
+    <child
+      link="RPIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RMCPS_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333337E-08"
+        ixy="-2.33107601156898E-23"
+        ixz="-7.96324007534221E-25"
+        iyy="2.92900000000002E-08"
+        iyz="-2.37470452236124E-24"
+        izz="7.27550000000005E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RMCPS_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/RMCPS_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RS_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.015 0.0445"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="RMCPS" />
+    <child
+      link="RMCPS_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LMCPF">
+    <inertial>
+      <origin
+        xyz="0.0709379177968305 0.00397819681941597 0.00201208207628643"
+        rpy="0 0 0" />
+      <mass
+        value="0.787468038824645" />
+      <inertia
+        ixx="0.0050565672322284"
+        ixy="8.21971233068347E-05"
+        ixz="0.000588066345918656"
+        iyy="0.00752978496763673"
+        iyz="0.000185293339212745"
+        izz="0.002773268562216" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF"
+    type="revolute">
+    <origin
+      xyz="-0.0499999966621405 -0.00749999999999948 0.109999992370605"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="LMCPF" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LMCPS">
+    <inertial>
+      <origin
+        xyz="0.000366352894816679 0.0013607910689285 0.0363070006443149"
+        rpy="0 0 0" />
+      <mass
+        value="0.0299795617629258" />
+      <inertia
+        ixx="4.61407270089445E-06"
+        ixy="-8.99357979698234E-11"
+        ixz="-2.65128538904233E-09"
+        iyy="4.96910634776406E-06"
+        iyz="-1.08820321097631E-08"
+        izz="1.68786894408093E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="LMCPF" />
+    <child
+      link="LMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LPIP">
+    <inertial>
+      <origin
+        xyz="0.000883607942915421 0.000518551489730026 0.0315502125402218"
+        rpy="0 0 0" />
+      <mass
+        value="0.0272064424685652" />
+      <inertia
+        ixx="4.85051610732064E-06"
+        ixy="1.06519728750236E-08"
+        ixz="1.36331026037563E-07"
+        iyy="3.78353465510332E-06"
+        iyz="-5.44400980930848E-08"
+        izz="1.94188295962763E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0519999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="LMCPS" />
+    <child
+      link="LPIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LDIP">
+    <inertial>
+      <origin
+        xyz="0.000755618362616173 -0.00285690029863039 0.0251719278979156"
+        rpy="0 0 0" />
+      <mass
+        value="0.0152963409977157" />
+      <inertia
+        ixx="2.60252180819878E-06"
+        ixy="-6.11796223608721E-09"
+        ixz="1.37867546785183E-07"
+        iyy="2.43805284577734E-06"
+        iyz="1.22062110226717E-07"
+        izz="7.35865815495013E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465000000000002"
+      rpy="0 0 0" />
+    <parent
+      link="LPIP" />
+    <child
+      link="LDIP" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LDIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 -2.77555756156289E-17 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333334E-08"
+        ixy="1.8535840962194E-23"
+        ixz="-1.64799163300881E-24"
+        iyy="2.92900000000001E-08"
+        iyz="1.34423765121166E-24"
+        izz="7.27550000000001E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LDIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LDIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LD_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.0149254046082226 0.0240957914612014"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="LDIP" />
+    <child
+      link="LDIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LDIP_CAMERA">
+    <inertial>
+      <origin
+        xyz="2.67746700503002E-05 0.00407450190545355 -0.015109791760626"
+        rpy="0 0 0" />
+      <mass
+        value="0.000865724954084931" />
+      <inertia
+        ixx="1.23823602198179E-08"
+        ixy="4.60159778385066E-25"
+        ixz="-1.11659294389911E-23"
+        iyy="4.23218910238285E-08"
+        iyz="4.32064612591673E-09"
+        izz="4.62218022775049E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LDIP_CAMERA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LDIP_CAMERA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LD_C"
+    type="fixed">
+    <origin
+      xyz="0 -0.00945806338187481 0.0430527620973654"
+      rpy="-1.0471975511966 0 -3.14159265358979" />
+    <parent
+      link="LDIP" />
+    <child
+      link="LDIP_CAMERA" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LPIP_TACTILE">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 2.77555756156289E-17 -0.00249999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333334E-08"
+        ixy="-1.50656575686639E-22"
+        ixz="-6.23483329349609E-25"
+        iyy="2.929E-08"
+        iyz="-1.58674109584387E-24"
+        izz="7.2755E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LPIP_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LPIP_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LP_T"
+    type="fixed">
+    <origin
+      xyz="5.00000000001055E-05 -0.0149999999999999 0.0390999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="LPIP" />
+    <child
+      link="LPIP_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LMCPS_TACTILE">
+    <inertial>
+      <origin
+        xyz="0 1.38777878078145E-17 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146" />
+      <inertia
+        ixx="4.95483333333335E-08"
+        ixy="-6.80924477888271E-24"
+        ixz="-4.03565792543714E-24"
+        iyy="2.929E-08"
+        iyz="-1.21105521224976E-23"
+        izz="7.27550000000002E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LMCPS_TACTILE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PALM_URDF.SLDASM_0415_2/meshes/LMCPS_TACTILE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LS_T"
+    type="fixed">
+    <origin
+      xyz="0 -0.015 0.0444999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="LMCPS" />
+    <child
+      link="LMCPS_TACTILE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
