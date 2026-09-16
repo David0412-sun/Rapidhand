@@ -1,0 +1,22 @@
+
+Electronic DevicesNameNumberMotor4Tactile Sensor1
+3d Printed PartsNameNumberF11F21F31F41F51F61F71F81F91G12G22G31G41G51P12P21
+Mechanical Standard PartsNameNumberScrew M2¡Á420Screw M2¡Á1016Screw M2.5¡Á126Screw M3¡Á63Bearing5¡Á8¡Á2.54BOM of each Finger	
+
+
+Electronic DevicesNameNumberMotor4Tactile Sensor1
+3d Printed PartsNameNumberT11T21T31T41T51T61T71T81T91T101T111T121G12G22G31P12P21
+Mechanical Standard PartsNameNumberScrew M2¡Á416Screw M2¡Á1016Screw M2.5¡Á128Screw M3¡Á63Bearing5¡Á8¡Á2.52Bearing15¡Á24¡Á51BOM of each Thumb	
+
+
+Electronic DevicesNameNumberCamera1
+3d Printed PartsNameNumberH11H21H31H42H51H62H71H81
+Mechanical Standard PartsNameNumberScrew M2.5¡Á1050Screw M4¡Á126Screw M3¡Á62
+SubassemblyNameNumberFinger4Thumb1BOM of  Palm	
+
+Total BOM 
+
+Electronic DevicesNameNumberMotor20Tactile Sensor5Camera1
+3d Printed PartsNameNumberF15F25F35F45F55F65F75F85F95T11T21T31T41T51T61T71T81T91T101T111T121
+3d Printed PartsNameNumberH11H21H31H42H51H62H71H81G112G212G36G45G55P112P26
+Mechanical Standard PartsNameNumberScrew M2¡Á4116Screw M2¡Á1096Screw M2.5¡Á1238Screw M3¡Á618Screw M2.5¡Á1050Screw M4¡Á126Screw M3¡Á62Bearing5¡Á8¡Á2.522Bearing15¡Á24¡Á51
