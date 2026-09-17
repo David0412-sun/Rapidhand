@@ -1,8 +1,6 @@
 # Finger and Thumb BOM
 
-Three-page English BOM: Finger on page 1, Thumb on page 2, and Total BOM on page 3, all landscape A4.
-Total BOM quantities use 4 Finger assemblies + 1 Thumb assembly and cover only
-the camera finger/thumb components listed here, not the complete hand or palm.
+Two-page English BOM: Finger on page 1 and Thumb on page 2, both landscape A4.
 Uses the original color exploded and assembled images.
 Only the tables use gray fills. Editable LaTeX vector labels identify parts and
 fasteners. The views are scaled using the motor body as a visual reference.
